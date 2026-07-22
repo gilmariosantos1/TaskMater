@@ -1,0 +1,169 @@
+
+.edit-task-content {
+  --background: #f9f9f9;
+}
+
+
+.custom-toolbar {
+  --background: #0073EA;
+  --color: #FFFFFF;
+}
+
+.back-btn {
+  --color: #FFFFFF;
+  font-weight: 600;
+  text-transform: none;
+}
+
+
+.task-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.task-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #000000; 
+}
+
+.task-id {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000000; 
+}
+
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #000000; 
+}
+
+
+.modern-input {
+  --border-radius: 8px;
+  --border-color: #e0e0e0;
+  --border-width: 1px;
+  --background: #ffffff;
+  --color: #757575; 
+  color: #757575;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.modern-input input, 
+.modern-input textarea {
+  color: #757575 !important; 
+}
+
+
+.select-with-badge {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.badge-dot {
+  position: absolute;
+  left: 14px;
+  z-index: 10;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+
+.badge-dot.baixa { background-color: #00FF37; } 
+.badge-dot.média, 
+.badge-dot.media { background-color: #FFF600; } 
+.badge-dot.alta { background-color: #FF0004; }  
+
+.badge-dot.status-em-andamento { background-color: #00FF37; }
+.badge-dot.status-pendente { background-color: #FFF600; }
+.badge-dot.status-concluído { background-color: #0073EA; }
+
+.select-padded {
+  width: 100%;
+  --padding-start: 36px;
+}
+
+.grid-selects ion-col {
+  padding-right: 12px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin: 20px 0;
+}
+
+
+.button-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.right-action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+
+.btn-delete {
+  --border-color: #DB3434;
+  --color: #DB3434;
+  --border-radius: 8px;
+  --border-width: 1.5px;
+  text-transform: none;
+  font-weight: 600;
+}
+
+
+.btn-cancel {
+  --border-color: #000000;
+  --color: #000000;
+  --border-radius: 8px;
+  --border-width: 1.5px;
+  text-transform: none;
+  font-weight: 600;
+}
+
+
+.btn-save {
+  --background: #000000; /* Cor de button #000000 */
+  --color: #FFFFFF;      /* Cor da fonte button #FFFFFF */
+  --border-radius: 8px;
+  text-transform: none;
+  font-weight: 600;
+}
