@@ -2,6 +2,7 @@ import React from 'react';
 import { IonHeader, IonToolbar, IonTitle, IonButtons, IonButton } from '@ionic/react';
 import { useHistory, useLocation } from 'react-router';
 import logo from '../assets/logoTaskMaster .png';
+import './Header.css'
 
 
 const Header: React.FC = () => {
