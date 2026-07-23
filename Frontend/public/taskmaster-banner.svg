@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240">
+  <rect width="1200" height="240" fill="#0f172a" />
+  <rect x="40" y="40" width="1120" height="160" rx="24" fill="#1e293b" stroke="#38bdf8" stroke-width="4" />
+  <circle cx="180" cy="120" r="48" fill="#38bdf8" />
+  <text x="280" y="108" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700">TaskMaster</text>
+  <text x="280" y="150" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="24">Organize suas tarefas com facilidade</text>
+</svg>
