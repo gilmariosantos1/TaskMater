@@ -1,12 +1,10 @@
 import React from 'react';
 import { IonHeader, IonToolbar, IonTitle, IonButtons, IonButton } from '@ionic/react';
 import { useHistory, useLocation } from 'react-router';
+import logo from '../assets/logoTaskMaster .png';
 
-interface HeaderProps {
-    title?: string;
-}
 
-const Header: React.FC<HeaderProps> = ({ title = 'TaskMaster' }) => {
+const Header: React.FC = () => {
     const history = useHistory();
     const location = useLocation();
 
@@ -17,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ title = 'TaskMaster' }) => {
     return (
         <IonHeader>
             <IonToolbar color="primary">
-                <IonTitle>{title}</IonTitle>
+                <IonTitle><img src={logo} alt="TaskMaster" className="header-logo"/></IonTitle>
                 <IonButtons slot='end'>
                     <IonButton onClick={() => history.push(targetRoute)}>
                         {buttonLabel}
