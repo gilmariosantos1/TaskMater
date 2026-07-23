@@ -1,0 +1,60 @@
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 40px 20px;
+  background: #fff;
+  color: #000;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.topo {
+  text-align: center;
+}
+
+.topo h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+}
+
+.topo p {
+  margin: 2px 0;
+  font-weight: bold;
+}
+
+.topo span {
+  color: #007bff;
+}
+
+.icone {
+  width: 150px;
+  height: 150px;
+}
+
+.rodape {
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.barra {
+  width: 100%;
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.enchimento {
+  height: 100%;
+  background: #007bff;
+}
+
+.rodape span {
+  font-size: 0.8rem;
+  color: #007bff;
+}
