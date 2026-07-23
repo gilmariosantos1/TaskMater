@@ -1,18 +1,16 @@
-import models from '../models/index.js';
-import crypto from 'crypto';
+// Backend/Controller/Usuario.js
+const models = require('../models/index.js');
+const crypto = require('crypto');
 
-export const cadastrarUsuario = async (req, res) => {
+const cadastrarUsuario = async (req, res) => {
     try {
         const { nome, email, senha } = req.body;
 
         if (!nome || !email || !senha) {
             return res.status(400).json({ error: "Todos os campos são obrigatórios" });
         }
-
-        const usuarioExistente = await models.Pessoa.findOne({
-            where: {
-                [models.Sequelize.Op.or]: [{ email }]
-            }
+        const usuarioExistente = await models.Usuario.findOne({
+            where: { email }
         });
 
         if (usuarioExistente) {
@@ -21,14 +19,13 @@ export const cadastrarUsuario = async (req, res) => {
 
         const senhaHash = crypto.createHash('sha256').update(senha).digest('hex');
 
-        
-        const novoUsuario = await models.Pessoa.create({
+        // Alterado de models.Pessoa para models.Usuario
+        const novoUsuario = await models.Usuario.create({
             nome,
             email,
             senha: senhaHash
         });
 
-    
         const { senha: _, ...userWithoutPassword } = novoUsuario.toJSON();
 
         return res.status(201).json({
@@ -39,4 +36,8 @@ export const cadastrarUsuario = async (req, res) => {
         console.error("Erro ao cadastrar usuário:", error);
         return res.status(500).json({ error: "Erro interno ao cadastrar usuário" });
     }
+};
+
+module.exports = {
+    cadastrarUsuario
 };
