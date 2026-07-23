@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
-import { IonPage, IonContent, IonHeader, IonToolbar, IonTitle } from '@ionic/react';
+import {
+  IonPage,
+  IonContent,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+} from '@ionic/react';
+
 import Splash from '../components/Splash';
+import Header from '../components/Header';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -18,12 +26,15 @@ const Home: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>TaskMaster</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <Header />
+
       <IonContent fullscreen className="ion-padding">
+        <IonHeader collapse="condense">
+          <IonToolbar>
+            <IonTitle size="large">TaskMaster</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+
         <h2>Conteúdo Principal</h2>
       </IonContent>
     </IonPage>
