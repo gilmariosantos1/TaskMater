@@ -14,6 +14,8 @@ interface TabelaTarefaProps {
   onDelete?: (taskId: string) => void;
 }
 
+
+
 const TabelaTarefa: React.FC<TabelaTarefaProps> = ({ tasks, onEdit, onDelete }) => {
   return (
     <div className="tabela">

@@ -1,47 +1,22 @@
 import { IonButton, IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { chevronDown } from 'ionicons/icons';
+import { useState } from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import TabelaTarefa, { Tarefa } from '../components/TabelaTarefa';
 import './Home.css';
-
-const tasks: Tarefa[] = [
-  {
-    id: '1',
-    titulo: 'Exemplo',
-    status: 'Em andamento',
-    prioridade: 'Alta',
-    dataEntrega: '25/07/2026',
-  },
-  {
-    id: '2',
-    titulo: 'Revisar código',
-    status: 'Pendente',
-    prioridade: 'Média',
-    dataEntrega: '29/07/2026',
-  },
-  {
-    id: '3',
-    titulo: 'Enviar relatório',
-    status: 'Concluída',
-    prioridade: 'Baixa',
-    dataEntrega: '20/07/2026',
-  },
-  {
-    id: '4',
-    titulo: 'Planejar sprint',
-    status: 'Em revisão',
-    prioridade: 'Alta',
-    dataEntrega: '30/07/2026',
-  },
-];
+import initialTasks from '../Services/initialTasks';
 
 const Home: React.FC = () => {
+  const [tasks, setTasks] = useState<Tarefa[]>(initialTasks);
+
   const handleEdit = (taskId: string) => {
     console.log('Editar tarefa', taskId);
+    // Implementar lógica de edição
   };
 
   const handleDelete = (taskId: string) => {
-    console.log('Excluir tarefa', taskId);
+    setTasks(tasks.filter(task => task.id !== taskId));
+    console.log('Tarefa deletada:', taskId);
   };
 
   return (
@@ -68,9 +43,11 @@ const Home: React.FC = () => {
             <IonIcon icon={chevronDown} slot="end" />
           </IonButton>
         </div>
+
         <TabelaTarefa tasks={tasks} onEdit={handleEdit} onDelete={handleDelete} />
 
       </IonContent>
+
     </IonPage>
   );
 };
