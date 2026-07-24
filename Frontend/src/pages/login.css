@@ -1,0 +1,135 @@
+.pagina-login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fdfdfd;
+}
+
+.cabecalho-login {
+  background-color: #007bff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.logo-cabecalho {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: black;
+}
+
+.logo-cabecalho span {
+  font-weight: 300;
+}
+
+.conteudo-login {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 4rem;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.logo .texto-preto {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.logo .texto-azul {
+  color: #007bff;
+  font-weight: 700;
+}
+
+.subtitulo-login {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.formulario-login {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-input label {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.grupo-input input {
+  height: 48px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+}
+
+.grupo-input input:focus {
+  outline: 2px solid #007bff;
+  border-color: transparent;
+}
+
+.botao-entrar {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 52px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.botao-entrar:hover {
+  background-color: #707070;
+}
+
+.texto-rodape {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #999;
+  margin-top: 20px;
+}
+
+.texto-rodape a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.texto-rodape a:hover {
+  text-decoration: underline 
+}
