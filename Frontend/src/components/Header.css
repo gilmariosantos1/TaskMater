@@ -1,0 +1,10 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.header-logo {
+  height: 68px; /* ajusta conforme o tamanho real da sua logo */
+  width: auto;
+}
